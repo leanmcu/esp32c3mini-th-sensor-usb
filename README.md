@@ -24,7 +24,9 @@ The code allows you to send data to <b>Home Assistant</b> and/or <b>ThingSpeak</
 
 If you don't have a Home Assistant server or prefer a cloud based solution, you can create a free account on ThingSpeak.com that will work very well for up to 4 temperature and humidity sensors. You can view the ThingSpeak data either from a browser or from the ThingView mobile app.
 
-In order to enter the configuration mode, press on the Esp32C3 Reset button, release it, then press on Boot button and hold it for at least a second before releasing. The blue led will flash and an access point is created. Connect to that access point and in your browser point to http://192.168.4.1
+The first time after you flash the firmware the board will enter automatically in web config mode. After the first successful settings, after reset or power on, the board will enter the normal operating mode. If you want to change the settings again in the future, press on the Esp32C3 Reset button, release it, then press on Boot button and hold it for at least a second before releasing.
+
+While in web config mode, the blue led will flash and an access point called LeanMCU HomeNode is created. Connect your computer to that access point and enter in your browser address http://192.168.4.1
 
 
 // mandatory settings
