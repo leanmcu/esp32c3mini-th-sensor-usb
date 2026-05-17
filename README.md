@@ -30,19 +30,19 @@ While in web config mode, the blue led will flash and an access point called Lea
 
 
 // mandatory settings
-  - HOME_ASSISTANT true if you want to use Home Assistant auto-discovery, false otherwise
-  - THINGSPEAK true if you want to send data to ThingSpeak, false otherwise
-// WiFi settings, mandatory
+  - HOME_ASSISTANT checked if you want to use Home Assistant auto-discovery, false otherwise
+  - THINGSPEAK checked if you want to send data to ThingSpeak, false otherwise
+</br>// WiFi settings, mandatory
   - WiFi ssid
   - WiFi password
-// MQTT settings, mandatory if HOME_ASSISTANT is true
+</br>// MQTT settings, mandatory if HOME_ASSISTANT is checked
   - mqtt_server and mqtt_server_ip; by default, mqtt_server is used, but you can also input the IP address of the MQTT server to avoid DNS resolution
   - mqtt_user
   - mqtt_pass
-// ThingSpeak settings, mandatory if THINGSPEAK is true
+</br>// ThingSpeak settings, mandatory if THINGSPEAK is checked
   - hingSpeakChannelNumber
   - thingSpeakWriteAPIKey
-// reporting period, mandatory
+</br>// reporting period, mandatory
   - timerDelay: deep sleep time in seconds (minimum 15, recommended 180 or more to avoid sensor overheating from esp32 heat)
 
 ## Libs 
