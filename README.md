@@ -50,9 +50,9 @@ For extra convenience, the solution also includes the following libraries:</br>
 HTU21D-Sensor-Library
   [https://github.com/devxplained/HTU21D-Sensor-Library] </br>
 pubsubclient
-  [https://github.com/knolleary/pubsubclient]
+  [https://github.com/knolleary/pubsubclient] </br>
 WiFiManager
-  [https://github.com/tzapu/wifimanager]
+  [https://github.com/tzapu/wifimanager] </br>
 
 ## License
 
