@@ -36,11 +36,11 @@ While in web config mode, the blue led will flash and an access point called Lea
 </br>// reporting period, mandatory
   - Measurement Period: deep sleep time in seconds (minimum 15, recommended 180 or more to avoid sensor overheating from esp32 heat)
   </br>// MQTT settings, mandatory if HOME_ASSISTANT is checked
-  - mqtt_server and mqtt_server_ip; by default, mqtt_server is used, but you can also input the IP address of the MQTT server to avoid DNS resolution
-  - mqtt_user
-  - mqtt_pass
+  - MQTT Server. You can also input the IP address of the MQTT server to avoid DNS resolution
+  - MQTT User
+  - MQTT Password
 </br>// ThingSpeak settings, mandatory if THINGSPEAK is checked
-  - ThingSpeakWriteAPIKey
+  - ThingSpeak Write API Key
 
 </br>// mandatory settings
   - HOME_ASSISTANT checked if you want to use Home Assistant auto-discovery, false otherwise
