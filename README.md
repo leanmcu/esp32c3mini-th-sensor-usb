@@ -29,21 +29,22 @@ The first time after you flash the firmware the board will enter automatically i
 While in web config mode, the blue led will flash and an access point called LeanMCU HomeNode is created. Connect your computer to that access point and enter in your browser address http://192.168.4.1
 
 
-// mandatory settings
-  - HOME_ASSISTANT checked if you want to use Home Assistant auto-discovery, false otherwise
-  - THINGSPEAK checked if you want to send data to ThingSpeak, false otherwise
+
 </br>// WiFi settings, mandatory
   - WiFi ssid
   - WiFi password
-</br>// MQTT settings, mandatory if HOME_ASSISTANT is checked
+</br>// reporting period, mandatory
+  - Measurement Period: deep sleep time in seconds (minimum 15, recommended 180 or more to avoid sensor overheating from esp32 heat)
+  </br>// MQTT settings, mandatory if HOME_ASSISTANT is checked
   - mqtt_server and mqtt_server_ip; by default, mqtt_server is used, but you can also input the IP address of the MQTT server to avoid DNS resolution
   - mqtt_user
   - mqtt_pass
 </br>// ThingSpeak settings, mandatory if THINGSPEAK is checked
-  - hingSpeakChannelNumber
-  - thingSpeakWriteAPIKey
-</br>// reporting period, mandatory
-  - timerDelay: deep sleep time in seconds (minimum 15, recommended 180 or more to avoid sensor overheating from esp32 heat)
+  - ThingSpeakWriteAPIKey
+
+</br>// mandatory settings
+  - HOME_ASSISTANT checked if you want to use Home Assistant auto-discovery, false otherwise
+  - THINGSPEAK checked if you want to send data to ThingSpeak, false otherwise
 
 ## Libs 
 For extra convenience, the solution also includes the following libraries:</br>
