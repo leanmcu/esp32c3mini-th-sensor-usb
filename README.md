@@ -41,7 +41,6 @@ While in web config mode, the blue led will flash and an access point called Lea
   - MQTT Password
 </br>// ThingSpeak settings, mandatory if THINGSPEAK is checked
   - ThingSpeak Write API Key
-
 </br>// mandatory settings
   - HOME_ASSISTANT checked if you want to use Home Assistant auto-discovery, false otherwise
   - THINGSPEAK checked if you want to send data to ThingSpeak, false otherwise
